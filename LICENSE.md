@@ -32,7 +32,7 @@ If you're making a commercial app and would like to use these planet illustratio
 
 ### MIT License
 
-Copyright (c) 2022 rsek
+Copyright (c) 2026 alathazal
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
