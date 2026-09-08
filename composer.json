@@ -1,0 +1,31 @@
+{
+    "name": "alathazal/starforged-data",
+    "description": "A fan-made composer package providing base game data for the Ironsworn: Stargforged tabletop roleplaying game.",
+    "version": "0.1.0",
+    "type": "library",
+    "license": "CC-BY-NC-SA-4.0",
+    "authors": [
+        {
+            "name": "Alathazal",
+            "email": "alathazal@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Alathazal\\StarforgedData\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "opis/json-schema": "^2.6",
+        "pestphp/pest": "^5.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "pest"
+    }
+}

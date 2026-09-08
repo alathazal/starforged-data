@@ -1,0 +1,533 @@
+[
+    {
+        "name": "Cataclysm",
+        "icon": "vector/truths/cataclysm.svg",
+        "table": [
+            {
+                "floor": 1,
+                "ceiling": 33,
+                "result": "The Sun Plague extinguished the stars in our home galaxy.",
+                "description": "The anomaly traveled at incredible speeds, many times faster than light itself, and snuffed out the stars around us before we realized it was coming. Few of us survived as we made our way to this new galaxy. Here in the Forge, the stars are still aflame. We cling to their warmth like weary travelers huddled around a fire.",
+                "subtable": [
+                    {
+                        "floor": 1,
+                        "ceiling": 25,
+                        "result": "Temporal distortions from a supermassive black hole"
+                    },{
+                        "floor": 26,
+                        "ceiling": 50,
+                        "result": "Sudden dark matter decay"
+                    },{
+                        "floor": 51,
+                        "ceiling": 75,
+                        "result": "Superweapon run amok"
+                    },{
+                        "floor": 76,
+                        "ceiling": 100,
+                        "result": "Scientific experiment gone awry"
+                    }
+                ],
+                "questStarter": "The galaxy your people left behind is a cold, lightless grave. But a solitary star still glows, a beacon in a vast darkness. How did this star survive the plague? Why do you vow to find the means to travel across the immeasurable gulfto this distant light?"
+            },{
+                "floor": 34,
+                "ceiling": 67,
+                "result": "Interdimensional entities invaded our reality.We escaped the ravages of a catastrophic war.",
+                "description": "Without warning, these implacable and enigmatic beings ravaged our homeworlds. We could not stand against them. With the last of our defenses destroyed, our hope gone, we cast our fate to the Forge. Here, we can hide. Survive.",
+                "subtable": [
+                    {
+                        "floor": 1,
+                        "ceiling": 15,
+                        "result": "Corrupting biological scourges"
+                    },{
+                        "floor": 16,
+                        "ceiling": 30,
+                        "result": "Swarming, animalistic creatures"
+                    },{
+                        "floor": 31,
+                        "ceiling": 44,
+                        "result": "Monstrous humanoids"
+                    },{
+                        "floor": 45,
+                        "ceiling": 58,
+                        "result": "Spirits of alluring, divine form"
+                    },{
+                        "floor": 59,
+                        "ceiling": 72,
+                        "result": "Beings of chaotic energy"
+                    },{
+                        "floor": 73,
+                        "ceiling": 86,
+                        "result": "Titanic creatures of horrific power"
+                    },{
+                        "floor": 87,
+                        "ceiling": 100,
+                        "result": "World-eating abominations of unimaginable scale"
+                    }
+                ],
+                "questStarter": "Here in the Forge, a rogue faction holds an artifact of these interdimensional entities. What is the nature of this relic? What power or dark fate does the faction intend to unleash?"
+            },{
+                "floor": 68,
+                "ceiling": 100,
+                "result": "We escaped the ravages of a catastrophic war.",
+                "description": "Over millennia, we consumed resources and shattered lives as we fueled the engines of industry, expansion, and war. In the end, a powerful foe took advantage of our rivalries in a violent bid for power. Fleeing the devastation, we assembled our fleets and traveled to the Forge. A new home. A fresh start.",
+                "subtable": [
+                    {
+                        "floor": 1,
+                        "ceiling": 20,
+                        "result": "Artificial intelligence"
+                    },{
+                        "floor": 21,
+                        "ceiling": 40,
+                        "result": "Religious zealots"
+                    },{
+                        "floor": 41,
+                        "ceiling": 60,
+                        "result": "Genetically engineered soldiers"
+                    },{
+                        "floor": 61,
+                        "ceiling": 80,
+                        "result": "Self-replicating nanomachines"
+                    },{
+                        "floor": 81,
+                        "ceiling": 100,
+                        "result": "A tyrannical faction or leader"
+                    }
+                ],
+                "questStarter": "A delegation of your dreaded foe arrives in the Forge. They claim to represent a rebel force seeking sanctuary. In return, they offer vital information. What news do they carry?"
+            }
+        ],
+        "character": "Do you possess a keepsake or artifact of pre-cataclysm society? What is it? Why is it important to you? If you are all that remains of a people or culture, you might be a VESTIGE.",
+        "source": {
+            "title": "Ironsworn: Starforged Rulebook",
+            "authors": [ "Shawn Tomkin" ],
+            "date": "2022-06-22",
+            "page": "84-85"
+        }
+    },{
+        "name": "Exodus",
+        "icon": "vector/truths/exodus.svg",
+        "table": [
+            {
+                "floor": 1,
+                "ceiling": 33,
+                "result": "When the Exodus fleet set off on a ponderous journey to a new home outside our galaxy, they marked the Forge as their destination. Countless generations lived out their lives aboard those titanic ships during the millennia-long passage.",
+                "description": "The refugees built a rich legacy of culture and tradition during the Exodus. Some even remained in the ships after their arrival in the Forge, unwilling or unable to leave their familiar confines. Those vessels, the Ironhomes, still sail the depths of this galaxy.",
+                "questStarter": "Your dreams are plagued by visions of a lost and crippled Exodus ship. What do you see? Why does it call to you?"
+            },{
+                "floor": 34,
+                "ceiling": 67,
+                "result": "A ragtag fleet of ships—propelled at tremendous speeds by experimental FTL drives—carried our ancestors to the Forge. But the technology that powered the ships is said to be the source of the Sundering, a fracturing of reality that plagues us here today.",
+                "description": "The experimental drives used by the Exodus fleet are forbidden, but the damage is done. The Sundering spreads across our reality like cracks on the surface of an icy pond. Those fissures unleash even more perilous realities upon our own. Did we flee one cataclysm, only to inadvertently create another?",
+                "questStarter": "A malfunctioning drive sent one of the refugee ships through space and time. Centuries later, they have finally arrived. For them, only weeks have passed. Why are these people mistrusted? Do you aid or oppose them?"
+            },{
+                "floor": 68,
+                "ceiling": 100,
+                "result": "Mysterious alien gates provided instantaneous one-way passage to the Forge.",
+                "description": "In the midst of the cataclysm, our ancestors found a strange metal pillar on our homeworld’s moon. A map on the surface of this alien relic detailed the deep-space locations of the Iron Gates—massive devices that powered artificial wormholes. With no other options, the Exodus ships fled through the gates and emerged here in the Forge.",
+                "questStarter": "An explorer brings news. They’ve located an active gate in the depths of the Forge. Why do you swear to travel there? Which power or foe seeks to take control of the gate?"
+            }
+        ],
+        "character": "Does your family or cultural history offer any stories of the Exodus? How does this legacy impact you today? If you are dedicated to expanding the reach of your people within the Forge, you might be an EXPLORER. If you are exiled or reviled, you might be an OUTCAST.",
+        "source": {
+            "title": "Ironsworn: Starforged Rulebook",
+            "authors": [ "Shawn Tomkin" ],
+            "date": "2022-06-22",
+            "page": "86"
+        }
+    },{
+        "name": "Communities",
+        "icon": "vector/truths/communities.svg",
+        "table": [
+            {
+                "floor": 1,
+                "ceiling": 33,
+                "result": "Few survived the journey to the Forge, and we are scattered to the winds in this perilous place.",
+                "description": "Our settlements are often small, starved for resources, and on the brink of ruin. Hundreds of far-flung settlements are lost and isolated within the untamed chaos of this galaxy, and we do not know their fate.",
+                "questStarter": "A settlement on an icebound planet is found abandoned. There is no sign of an attack. No bodies. Their ships and vehicles sit idle. The people are simply gone. Vanished. What is your connection to this place?"
+            },{
+                "floor": 34,
+                "ceiling": 67,
+                "result": "Dangers abound, but there is safety in numbers. Many ships and settlements are united under the banner of one of the Founder Clans.",
+                "description": "We have a tentative foothold in this galaxy. Each of the five Founder Clans honor the name and legacy of a leader who guided their people in the chaotic time after the Exodus. Vast reaches of the settled domains are claimed by the clans, and territorial skirmishes are common.",
+                "questStarter": "A forsaken people, sworn to no clan, live on an orbital station. A recent illness left many sick or dead. Supplies are urgently needed. Why were these people exiled, and why do you swear to give them aid? Which clan stands against you?"
+            },{
+                "floor": 68,
+                "ceiling": 100,
+                "result": "We have made our mark in this galaxy, but the energy storms we call balefires threaten to undo that progress, leaving our communities isolated and vulnerable.",
+                "description": "Starships navigate along bustling trade routes between settlements. We’ve built burgeoning outposts on the fringes of known sectors, and bold spacers chart new paths into unexplored domains. But this hard-earned success is threatened by the chaotic balefires, intense energy anomalies that cut off trade routes and threaten entire planets.",
+                "questStarter": "A balefire threatens a deep-space settlement. Can a rescue fleet be marshaled in time to transport the inhabitants of the station to safety? What foe stands in the way?"
+            }
+        ],
+        "character": "If you are skilled at negotiation and resolving disputes between communities, you might be a DIPLOMAT. If you make your mark with creative works, you might be an ARTIST. If you have always lived among the stars, you might be VOIDBORN.",
+        "source": {
+            "title": "Ironsworn: Starforged Rulebook",
+            "authors": [ "Shawn Tomkin" ],
+            "date": "2022-06-22",
+            "page": "87"
+        }
+    },{
+        "name": "Iron",
+        "icon": "vector/truths/iron.svg",
+        "table": [
+            {
+                "floor": 1,
+                "ceiling": 33,
+                "result": "Iron vows are sworn upon the remnants of ships that carried our people to the Forge.",
+                "description": "Many of our outposts were built from the iron bones of the Exodus ships. Fragments of the ships were also given to survivors as a remembrance, and passed from one generation to the next. Today, the Ironsworn swear vows upon the shards to honor the sacrifice of their forebears, the essence of the places left behind, and the souls of those great ships.",
+                "questStarter": "The iron shard you carry is a small piece of the outer hull of an Exodus ship. The navigational chart inscribed on its surface only reveals itself when exposed to the light of a specific star. Where is the map purported to lead, and why are you sworn to follow it? Who seeks to claim the map for themselves?"
+            },{
+                "floor": 34,
+                "ceiling": 67,
+                "result": "Iron vows are sworn upon totems crafted from the enigmatic metal we call black iron.",
+                "description": "Black iron was first forged by a long-dead civilization. Some say it is a living metal, attuned to the hidden depths of the universe. Remnants of this prized resource are found within ancient sites throughout the Forge. It is resistant to damage and corrosion, but can be molded using superheated plasma at specialized facilities. The Ironsworn carry weapons, armor, or tokens crafted from black iron, and swear vows upon it.",
+                "questStarter": "A black iron token of special significance has been stolen. What power or authority is bound to this object? Who has taken it?"
+            },{
+                "floor": 68,
+                "ceiling": 100,
+                "result": "The Ironsworn bind their honor to iron blades.",
+                "description": "Aboard a starship, where stray gunfire can destroy fragile equipment or pierce hulls, the brutal practicality of a sword makes for a useful weapon. A few also favor the silent efficiency of a blade for infiltration or espionage. Most importantly, when the Ironsworn swear a vow upon a sword, they bind their commitment to the metal. If they forsake a vow, that iron must be abandoned. To be Ironsworn without a blade is to be disgraced.",
+                "questStarter": "You vow to forge a new sword from the iron of an important object or artifact. What is it, and why is it meaningful to you? Who protects it?"
+            }
+        ],
+        "character": "What do you swear vows upon? Why is this object meaningful to you? If swearing iron vows to a leader or organization are a key aspect of your character, you might be BANNERSWORN.",
+        "source": {
+            "title": "Ironsworn: Starforged Rulebook",
+            "authors": [ "Shawn Tomkin" ],
+            "date": "2022-06-22",
+            "page": "88"
+        }
+    },{
+        "name": "Laws",
+        "icon": "vector/truths/laws.svg",
+        "table": [
+            {
+                "floor": 1,
+                "ceiling": 33,
+                "result": "Much of the settled domains are a lawless frontier. Criminal factions and corrupt leaders often hold sway.",
+                "description": "Powers rise and fall in the Forge, so any authority is fleeting. In the end, we must fend for ourselves. A few communities are bastions of successful autonomy, but many are corrupted or preyed upon by petty despots, criminals, and raiders.",
+                "questStarter": "In the upper atmosphere of a gas giant, transport vehicles carry valuable and volatile fuel from the processing plant to a heavily guarded storage depot. The notorious leader of a criminal organization needs this fuel, and gives you the schedule for the transports. What leverage does this person hold over you? How will you undertake this heist?"
+            },{
+                "floor": 34,
+                "ceiling": 67,
+                "result": "Laws and governance vary across settled domains, but bounty hunters are given wide latitude to pursue their contracts. Their authority is almost universally recognized, and supersedes local laws.",
+                "description": "Through tradition and influence, bounty hunter guilds are given free rein to track and capture fugitives in most settled places. Only the foolish stand between a determined bounty hunter and their target.",
+                "questStarter": "A famed bounty hunter needs your help tracking down their quarry. What is your relationship to the fugitive? Do you swear to aid the hunter, or the target?"
+            },{
+                "floor": 68,
+                "ceiling": 100,
+                "result": "Our communities are bound under the terms of the Covenant, a charter established after the Exodus. The organization called the Keepers is sworn to uphold those laws.",
+                "description": "Most settlements are still governed under the Covenant and yield to the authority of the Keepers. But a few view the Covenant as a dogmatic, impractical, and unjust relic of our past; in those places, the Keepers find no welcome.",
+                "questStarter": "A Keeper abuses their authority to take control of a settlement, and rules with an iron fist. What do they seek to gain there?"
+            }
+        ],
+        "character": "If you chase down outlaws, you might be a BOUNTY HUNTER. If you are skilled at getting in and out of protected places and systems, you might be an INFILTRATOR. If you are on the run from a power or authority, you might be a FUGITIVE. If you an expert investigator, you might be a SLEUTH. If you have connections within the criminal underworld, you might be a SCOUNDREL.",
+        "source": {
+            "title": "Ironsworn: Starforged Rulebook",
+            "authors": [ "Shawn Tomkin" ],
+            "date": "2022-06-22",
+            "page": "89"
+        }
+    },{
+        "name": "Religion",
+        "icon": "vector/truths/religion.svg",
+        "table": [
+            {
+                "floor": 1,
+                "ceiling": 33,
+                "result": "Our gods failed us. We left them behind.",
+                "description": "The Exodus was a tipping point. The gods offered no help to the billions who died in the cataclysm, and spirituality has little meaning in the Forge. Most now see religion as a useless relic of our past. But the search for meaning continues, and many are all-too-willing to follow a charismatic leader who claims to offer a better way.",
+                "questStarter": "A charismatic leader claims to have harnessed a technology that offers new hope to the people of the Forge. What is this innovation? What is your relationship to this person or their followers? What grave danger do they pose?"
+            },{
+                "floor": 34,
+                "ceiling": 67,
+                "result": "Our faith is as diverse as our people.",
+                "description": "Many have no religion, or offer an occasional prayer out of habit. Others pay homage to the gods of our forebears as a way of connecting to their roots. Some idealize the natural order of the universe, and see the divine in the gravitational dance of stars or the complex mechanisms of a planetary ecosystem. And many now worship the Primordials—gods of a fallen people who once dwelt within the Forge.",
+                "questStarter": "A cult seeks to take control of a site reputed to hold a Primordial artifact. What holy object do they seek? Why are you sworn to stop them?"
+            },{
+                "floor": 68,
+                "ceiling": 100,
+                "result": "Three dominant religious orders, the Triumvirate, battle forinfluence and power within the Forge.",
+                "description": "Our communities are often sworn to serve one of the three doctrines of the Triumvirate. For many, faith offers purpose and meaning. But it also divides us. Throughout our brief history in the Forge, the leaders of the Triumvirate have pitted us against one another. For this reason, some are apostates who disavow these religions and follow a different path.",
+                "questStarter": "You bear the mark of one of the gods of the Triumvirate. What is it? Priests declare this as a sign you are chosen to fulfill a destiny. Do you accept this fate, and swear to see it through, or are you determined to see it undone? What force opposes you?"
+            }
+        ],
+        "character": "What is your relationship to religion? If you are an ardent follower of agod or creed, you might be a DEVOTANT.",
+        "source": {
+            "title": "Ironsworn: Starforged Rulebook",
+            "authors": [ "Shawn Tomkin" ],
+            "date": "2022-06-22",
+            "page": "90"
+        }
+    },{
+        "name": "Magic",
+        "icon": "vector/truths/magic.svg",
+        "table": [
+            {
+                "floor": 1,
+                "ceiling": 33,
+                "result": "Magic does not exist.",
+                "description": "Some look to superstition and age-old traditions for comfort in this unforgiving galaxy. But that is foolishness. What some call magic is simply a product of technologies or natural forces we aren’t yet equipped to understand.",
+                "questStarter": "An ancient technological relic unleashes a power indistinguishable from magic. What is the origin of this artifact? What ability does it grant? Are you sworn to protect or destroy it?"
+            },{
+                "floor": 34,
+                "ceiling": 67,
+                "result": "Supernatural powers are wielded by those rare people we call paragons.",
+                "description": "While not magic in the truest sense, the abilities of the paragons are as close to magic as we can conjure.",
+                "subtable": [
+                    {
+                        "floor": 1,
+                        "ceiling": 20,
+                        "result": "Genetic engineering"
+                    },{
+                        "floor": 21,
+                        "ceiling": 40,
+                        "result": "Psychic experimentation"
+                    },{
+                        "floor": 41,
+                        "ceiling": 60,
+                        "result": "Evolutionary mutations"
+                    },{
+                        "floor": 61,
+                        "ceiling": 80,
+                        "result": "Magitech augmentations"
+                    },{
+                        "floor": 81,
+                        "ceiling": 100,
+                        "result": "Ancient knowledge held by secretive orders"
+                    }
+                ],
+                "questStarter": "A young paragon wields incredible power, but cannot control it. They have been shunned by family and friends. They are also hunted by a person or organization who seeks to use them as a weapon. Why are you sworn to protect the paragon? What fabled location might offer a new home for them?"
+            },{
+                "floor": 68,
+                "ceiling": 100,
+                "result": "Unnatural energies flow through the Forge. Magic and science are two sides of the same coin.",
+                "description": "Soon after our arrival, some displayed the ability to harness the Forge’s energies. Today, mystics invoke this power to manipulate matter or see beyond the veils of our own universe. But this can be a corrupting force, and the most powerful mystics are respected and feared in equal measure.",
+                "questStarter": "Someone you love has been corrupted by the powers of the Forge. Why did they fall into darkness? Where are they now? Do you seek to save them or defeat them?"
+            }
+        ],
+        "character": "If magic is an aspect of your setting, how does your character and their culture view these unnatural abilities? If you possess supernatural powers, you might be an EMPATH, FIREBRAND, KINETIC, LOOPER, SEER, or SHADE.",
+        "source": {
+            "title": "Ironsworn: Starforged Rulebook",
+            "authors": [ "Shawn Tomkin" ],
+            "date": "2022-06-22",
+            "page": "91"
+        }
+    },{
+        "name": "Communication and Data",
+        "icon": "vector/truths/communication_and_data.svg",
+        "table": [
+            {
+                "floor": 1,
+                "ceiling": 33,
+                "result": "Much was lost when we came to the Forge. It is a dark age.",
+                "description": "The knowledge that remains is a commodity as valuable as the rarest resource. Information is collected, hoarded, and jealously guarded. Ships and outposts endure prolonged periods of isolation, and rumors or disinformation are used to gain advantage or undermine foes.",
+                "questStarter": "An insurgent faction seeks to make knowledge available to all. To that end, they ask your aid in stealing important data from an outpost belonging to a corrupt organization. What information is held there? Why is it also important to you?"
+            },{
+                "floor": 34,
+                "ceiling": 67,
+                "result": "Information is life. We rely on spaceborne couriers to transport messages and data across the vast distances between settlements.",
+                "description": "Direct communication and transmissions beyond the near-space of a ship or outpost are impossible. Digital archives are available at larger outposts, but the information is not always up-to-date or reliable. Therefore, the most important communications and discoveries are carried by couriers who swear vows to see that data safely to its destination.",
+                "questStarter": "You discover a crippled courier ship. The pilot, carrying a critical and time-sensitive message, is dead. Where was the message bound, and why do you swear to see it to its destination?"
+            },{
+                "floor": 68,
+                "ceiling": 100,
+                "result": "In settled domains, a network of data hubs called the Weave allow near-instantaneous communication and data-sharing between ships and outposts.",
+                "description": "Because of their importance, Weave hubs are often targets for sabotage, and communication blackouts are not uncommon. Beyond the most populous sectors, travelers and outposts are still commonly isolated and entirely off the grid.",
+                "questStarter": "After years of isolation, the launch of a new data hub will connect several outposts to the Weave. But a person or faction seeks to stop it. What do they hope to gain by keeping those settlements in the dark? Why are you sworn to stop them?"
+            }
+        ],
+        "character": "If you are an expert at subverting or manipulating digital information systems, you might be an INFILTRATOR. If you keep an archive of navigational charts, you might be a NAVIGATOR.",
+        "source": {
+            "title": "Ironsworn: Starforged Rulebook",
+            "authors": [ "Shawn Tomkin" ],
+            "date": "2022-06-22",
+            "page": "92"
+        }
+    },{
+        "name": "Medicine",
+        "icon": "vector/truths/medicine.svg",
+        "table": [
+            {
+                "floor": 1,
+                "ceiling": 33,
+                "result": "Our advanced medical technologies and expertise was lost during the Exodus.",
+                "description": "Healers are rare and ill-equipped. Untold numbers have succumbed to sickness, injury, and disease. Those who survive often bear the scars of a hard and dangerous life in the Forge.",
+                "questStarter": "A respected leader has fallen ill, stricken by a sickness eradicated in the years after the Exodus. A vaccine was once available, but the only remaining samples are held in a research outpost on a remote ocean world, long-ago seized by a dangerous foe. What is your relationship to the sickened leader, and what foe stands in your way?"
+            },{
+                "floor": 34,
+                "ceiling": 67,
+                "result": "To help offset a scarcity of medical supplies and knowledge, the resourceful technicians we call riggers create basic organ and limb replacements.",
+                "description": "Much was lost in the Exodus, and what remains of our medical technologies and expertise is co-opted by the privileged and powerful. For most, advanced medical care is out of reach. When someone suffers a grievous injury, they’ll often turn to a rigger for a makeshift mechanical solution.",
+                "questStarter": "A rigger is in desperate need of a rare technological artifact to create a life-saving medical device. Their patient is someone important to you, and won’t survive more than a few days. What is the nature of this artifact, and what protects it?"
+            },{
+                "floor": 68,
+                "ceiling": 100,
+                "result": "Orders of sworn healers preserve our medical knowledge and train new generations of caregivers.",
+                "description": "Life-saving advanced care is available within larger communities throughout the settled sectors of the Forge. Even remote communities are often served by a novice healer, or can request help from a healer’s guild in an emergency.",
+                "questStarter": "A reactor exploded at a remote settlement, killing several and exposing many others to lethal radiation. A team of healers en route to provide aid were captured by raiders. What do the raiders demand for their release?"
+            }
+        ],
+        "character": "Do you bear any notable scars or prosthetics? Do you have any medical or physical disabilities? These aspects might influence your look or approach. If you are skilled at providing medical care for yourself or others, you might be a HEALER. If you are rigged with advanced prosthetics or cyberware, you might be AUGMENTED.",
+        "source": {
+            "title": "Ironsworn: Starforged Rulebook",
+            "authors": [ "Shawn Tomkin" ],
+            "date": "2022-06-22",
+            "page": "93"
+        }
+    },{
+        "name": "Artificial Intelligence",
+        "icon": "vector/truths/artificial_intelligence.svg",
+        "table": [
+            {
+                "floor": 1,
+                "ceiling": 33,
+                "result": "",
+                "description": "",
+                "questStarter": ""
+            },{
+                "floor": 34,
+                "ceiling": 67,
+                "result": "",
+                "description": "",
+                "questStarter": ""
+            },{
+                "floor": 68,
+                "ceiling": 100,
+                "result": "",
+                "description": "",
+                "questStarter": ""
+            }
+        ],
+        "character": "",
+        "source": {
+            "title": "Ironsworn: Starforged Rulebook",
+            "authors": [ "Shawn Tomkin" ],
+            "date": "2022-06-22",
+            "page": "94"
+        }
+    },{
+        "name": "War",
+        "icon": "vector/truths/war.svg",
+        "table": [
+            {
+                "floor": 1,
+                "ceiling": 33,
+                "result": "",
+                "description": "",
+                "questStarter": ""
+            },{
+                "floor": 34,
+                "ceiling": 67,
+                "result": "",
+                "description": "",
+                "questStarter": ""
+            },{
+                "floor": 68,
+                "ceiling": 100,
+                "result": "",
+                "description": "",
+                "questStarter": ""
+            }
+        ],
+        "character": "",
+        "source": {
+            "title": "Ironsworn: Starforged Rulebook",
+            "authors": [ "Shawn Tomkin" ],
+            "date": "2022-06-22",
+            "page": "95"
+        }
+    },{
+        "name": "Lifeforms",
+        "icon": "vector/truths/lifeforms.svg",
+        "table": [
+            {
+                "floor": 1,
+                "ceiling": 33,
+                "result": "",
+                "description": "",
+                "questStarter": ""
+            },{
+                "floor": 34,
+                "ceiling": 67,
+                "result": "",
+                "description": "",
+                "questStarter": ""
+            },{
+                "floor": 68,
+                "ceiling": 100,
+                "result": "",
+                "description": "",
+                "questStarter": ""
+            }
+        ],
+        "character": "",
+        "source": {
+            "title": "Ironsworn: Starforged Rulebook",
+            "authors": [ "Shawn Tomkin" ],
+            "date": "2022-06-22",
+            "page": "96"
+        }
+    },{
+        "name": "Precursors",
+        "icon": "vector/truths/precursors.svg",
+        "table": [
+            {
+                "floor": 1,
+                "ceiling": 33,
+                "result": "",
+                "description": "",
+                "questStarter": ""
+            },{
+                "floor": 34,
+                "ceiling": 67,
+                "result": "",
+                "description": "",
+                "questStarter": ""
+            },{
+                "floor": 68,
+                "ceiling": 100,
+                "result": "",
+                "description": "",
+                "questStarter": ""
+            }
+        ],
+        "character": "",
+        "source": {
+            "title": "Ironsworn: Starforged Rulebook",
+            "authors": [ "Shawn Tomkin" ],
+            "date": "2022-06-22",
+            "page": "97"
+        }
+    },{
+        "name": "Horrors",
+        "icon": "vector/truths/horrors.svg",
+        "table": [
+            {
+                "floor": 1,
+                "ceiling": 33,
+                "result": "",
+                "description": "",
+                "questStarter": ""
+            },{
+                "floor": 34,
+                "ceiling": 67,
+                "result": "",
+                "description": "",
+                "questStarter": ""
+            },{
+                "floor": 68,
+                "ceiling": 100,
+                "result": "",
+                "description": "",
+                "questStarter": ""
+            }
+        ],
+        "character": "",
+        "source": {
+            "title": "Ironsworn: Starforged Rulebook",
+            "authors": [ "Shawn Tomkin" ],
+            "date": "2022-06-22",
+            "page": "98"
+        }
+    }
+]
