@@ -1,7 +1,6 @@
 {
     "name": "alathazal/starforged-data",
     "description": "A fan-made composer package providing base game data for the Ironsworn: Stargforged tabletop roleplaying game.",
-    "version": "0.1.0",
     "type": "library",
     "license": "CC-BY-NC-SA-4.0",
     "authors": [
