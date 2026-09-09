@@ -1,10 +1,28 @@
 {
     "json.schemas": [
         {
-            "fileMatch": [
-                "data/truths.json"
-            ],
-            "url": "./schema/truths.schema.json"
+            "fileMatch": ["data/asset_types.json"],
+            "url": "./schema/schema.asset_types.json"
+        },
+        {
+            "fileMatch": ["data/assets.json"],
+            "url": "./schema/schema.assets.json"
+        },
+        {
+            "fileMatch": ["data/encounters.json"],
+            "url": "./schema/schema.encounters.json"
+        },
+        {
+            "fileMatch": ["data/moves.json"],
+            "url": "./schema/schema.moves.json"
+        },
+        {
+            "fileMatch": ["data/oracles.json"],
+            "url": "./schema/schema.oracles.json"
+        },
+        {
+            "fileMatch": ["data/truths.json"],
+            "url": "./schema/schema.truths.json"
         }
     ]
 }

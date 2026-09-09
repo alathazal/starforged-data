@@ -4,11 +4,14 @@ use Opis\JsonSchema\Schema;
 use Opis\JsonSchema\Validator;
 
 describe('JSON Validity', function () {
-    it('truths.json parses correctly', function () {
-        $data = json_decode(
-            file_get_contents(__DIR__ . '/../src/data/truths.json')
-        );
+    foreach (['asset_types','assets', 'encounters', 'moves', 'oracles', 'truths'] as $dataFile) {
+        it("{$dataFile}.json parses correctly", function () use ($dataFile) {
         
-        expect($data)->not->toBeNull();
-    });
+            $data = json_decode(
+                file_get_contents(__DIR__ . "/../src/data/{$dataFile}.json")
+            );
+
+            expect($data)->not->toBeNull();
+        });
+    }
 });

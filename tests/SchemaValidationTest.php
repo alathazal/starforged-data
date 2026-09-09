@@ -1,36 +1,28 @@
 <?php
 
-use Opis\JsonSchema\SchemaLoader;
 use Opis\JsonSchema\Validator;
 
-describe('Validates data files against their schema', function() {
-    it('truths.json validates correctly', function () {
-        $data = json_decode(
-            file_get_contents(__DIR__ . '/../src/data/truths.json')
-        );
-
-        expect($data)->not->toBeNull();
-
-        $shared_schema = json_decode(
-            file_get_contents(__DIR__ . '/../src/schema/shared.schema.json')
-        );
-
-        expect($shared_schema)->not->toBeNull();
-
-        $truths_schema = json_decode(
-            file_get_contents(__DIR__ . '/../src/schema/truths.schema.json')
-        );
-
-        expect($truths_schema)->not->toBeNull();
-
-        $validator = new Validator();
-        $validator->loader()->resolver()->registerRaw($shared_schema, 'schema:///shared.schema.json');
-
-        $result = $validator->validate($data, $truths_schema);
-
-        expect($result->isValid())
-            ->toBeTrue(
-                json_encode($result->error(), JSON_PRETTY_PRINT)
+describe('Validates data files against their schema', function () {
+    foreach (['asset_types', 'assets', 'encounters', 'moves', 'oracles', 'truths'] as $dataFile) {
+        it("{$dataFile}.json validates correctly", function () use ($dataFile) {
+            $data = json_decode(
+                file_get_contents(__DIR__ . "/../src/data/{$dataFile}.json")
             );
-    });
+
+            expect($data)->not->toBeNull();
+
+            $schema = json_decode(
+                file_get_contents(__DIR__ . "/../src/schema/schema.{$dataFile}.json")
+            );
+
+            expect($schema)->not->toBeNull();
+
+            $result = (new Validator())->validate($data, $schema);
+
+            expect($result->isValid())
+                ->toBeTrue(
+                    json_encode($result->error(), JSON_PRETTY_PRINT)
+                );
+        });
+    }
 });

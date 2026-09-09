@@ -1,0 +1,98 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Asset Types",
+  "description": "Schema for asset_types.json.",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/AssetType"
+  },
+  "definitions": {
+    "AssetType": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Source": {
+          "$ref": "#/definitions/Source"
+        },
+        "$id": {
+          "type": "string",
+          "pattern": "^(Starforged|Ironsworn)/Assets/[A-z_-]+$"
+        },
+        "Name": {
+          "type": "string"
+        },
+        "Description": {
+          "type": "string"
+        },
+        "Display": {
+          "$ref": "#/definitions/Display"
+        },
+        "Usage": {
+          "$ref": "#/definitions/Usage"
+        }
+      },
+      "required": ["Source", "$id", "Name", "Description", "Display", "Usage"]
+    },
+    "Source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Title": {
+          "type": "string"
+        },
+        "Authors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Date": {
+          "type": "string",
+          "pattern": "^(0[1-9]|1[0-2])([0-2][1-9]|3[0-1])([0-9][0-9])$"
+        },
+        "Page": {
+          "type": "integer"
+        },
+        "Url": {
+          "type": "string",
+          "pattern": "^https?://.*$"
+        }
+      },
+      "required": ["Title", "Authors"]
+    },
+    "Display": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Title": {
+          "type": "string"
+        },
+        "Icon": {
+          "type": "string",
+          "pattern": "^\\.\\./\\.\\./img/vector/[A-z-_0-9/]+\\.svg$"
+        },
+        "Images": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "Color": {
+          "type": "string",
+          "pattern": "^#[A-f0-9]{6}$"
+        }
+      },
+      "required": ["Title"]
+    },
+    "Usage": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "Shared": {
+          "type": "boolean"
+        }
+      },
+      "required": ["Shared"]
+    }
+  }
+}

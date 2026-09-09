@@ -1,0 +1,297 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Encounters",
+  "description": "Schema for encounters.json.",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/IEncounterStarforged"
+  },
+  "definitions": {
+    "ChallengeRank": {
+      "description": "Enumerates challenge ranks.",
+      "title": "ChallengeRank",
+      "enum": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "type": "number"
+    },
+    "EncounterNatureStarforged": {
+      "title": "EncounterNatureStarforged",
+      "enum": [
+        "Creature",
+        "Horror",
+        "Human",
+        "Machine",
+        "Monster"
+      ],
+      "type": "string"
+    },
+    "IDisplayWithTitle": {
+      "title": "IDisplayWithTitle",
+      "type": "object",
+      "properties": {
+        "Title": {
+          "description": "The title of this item as it appears printed in the rulebook. Intended for use as the item's header, label, etc.",
+          "type": "string",
+          "title": "Title"
+        },
+        "Icon": {
+          "description": "A URL pointing to a single SVG icon.",
+          "pattern": "^\\.\\./\\.\\./img/vector/[A-z-_0-9/]+\\.svg$",
+          "type": "string",
+          "title": "Icon"
+        },
+        "Images": {
+          "description": "An array of URLs pointing to one or more WEBP images.",
+          "pattern": "^\\.\\./\\.\\./img/raster/[A-z-_0-9/]+\\.webp$",
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Images"
+        },
+        "Color": {
+          "description": "A hex color associated with this item, for use as e.g. an accent color in its display.",
+          "pattern": "^#[A-f0-9][A-f0-9][A-f0-9][A-f0-9][A-f0-9][A-f0-9]$",
+          "type": "string",
+          "title": "Color"
+        }
+      },
+      "defaultProperties": [],
+      "additionalProperties": false,
+      "required": [
+        "Title"
+      ]
+    },
+    "IEncounterStarforged": {
+      "description": "Represents an *Ironsworn: Starforged* Encounter entry.",
+      "title": "IEncounterStarforged",
+      "type": "object",
+      "properties": {
+        "$id": {
+          "description": "The item's unique string ID.",
+          "pattern": "^Starforged/Encounters/[A-z_-]+$",
+          "type": "string",
+          "title": "$id"
+        },
+        "Nature": {
+          "$ref": "#/definitions/EncounterNatureStarforged",
+          "title": "Nature"
+        },
+        "Summary": {
+          "description": "A user-facing markdown summary of the item. `Summary` is shorter than{@linkIHasDescription| Description}.",
+          "type": "string",
+          "title": "Summary"
+        },
+        "Variants": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/IEncounterVariant"
+          },
+          "title": "Variants"
+        },
+        "Features": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Features"
+        },
+        "Drives": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Drives"
+        },
+        "Tactics": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Tactics"
+        },
+        "Quest Starter": {
+          "description": "A markdown string describing the quest starter associated with this item.",
+          "type": "string",
+          "title": "Quest Starter"
+        },
+        "Your Truth": {
+          "description": "A markdown string representing the text of the \"Your Truth\" callout box included with some *Ironsworn* encounters.",
+          "type": "string",
+          "title": "Your Truth"
+        },
+        "Name": {
+          "description": "The item's internal name. Should be unique among its sibling elements, as this key is often used (along with the object's ancestors) to generate its $id.\n\nIf the item has Display.Title, that should be preferred for most user-facing labels.",
+          "type": "string",
+          "title": "Name"
+        },
+        "Display": {
+          "$ref": "#/definitions/IDisplayWithTitle",
+          "description": "Data relevant to this item's display/rendering.",
+          "title": "Display"
+        },
+        "Tags": {
+          "description": "Arbitrary strings tags that describe optional metadata that doesn't fit in other properties.",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "vehicle"
+            ]
+          },
+          "title": "Tags"
+        },
+        "Rank": {
+          "$ref": "#/definitions/ChallengeRank",
+          "title": "Rank"
+        },
+        "Description": {
+          "description": "A user-facing markdown description of the item, consisting of one or more paragraphs.",
+          "type": "string",
+          "title": "Description"
+        },
+        "Source": {
+          "$ref": "#/definitions/ISource",
+          "description": "Information on this item's source.",
+          "title": "Source"
+        }
+      },
+      "defaultProperties": [],
+      "additionalProperties": false,
+      "required": [
+        "$id",
+        "Description",
+        "Display",
+        "Drives",
+        "Features",
+        "Name",
+        "Nature",
+        "Quest Starter",
+        "Rank",
+        "Source",
+        "Summary",
+        "Tactics",
+        "Variants"
+      ]
+    },
+    "IEncounterVariant": {
+      "description": "Represents a variant encounter 'stubs' included with a parent encounter in *Ironsworn: Starforged*.",
+      "title": "IEncounterVariant",
+      "type": "object",
+      "properties": {
+        "$id": {
+          "description": "The item's unique string ID.",
+          "pattern": "^Starforged/Encounters/[A-z_-]+/[A-z_-]+$",
+          "type": "string",
+          "title": "$id"
+        },
+        "Variant of": {
+          "type": "string",
+          "title": "Variant of"
+        },
+        "Name": {
+          "description": "The item's internal name. Should be unique among its sibling elements, as this key is often used (along with the object's ancestors) to generate its $id.\n\nIf the item has Display.Title, that should be preferred for most user-facing labels.",
+          "type": "string",
+          "title": "Name"
+        },
+        "Display": {
+          "$ref": "#/definitions/IDisplayWithTitle",
+          "description": "Data relevant to this item's display/rendering.",
+          "title": "Display"
+        },
+        "Source": {
+          "$ref": "#/definitions/ISource",
+          "description": "Information on this item's source.",
+          "title": "Source"
+        },
+        "Tags": {
+          "description": "Arbitrary strings tags that describe optional metadata that doesn't fit in other properties.",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "vehicle"
+            ]
+          },
+          "title": "Tags"
+        },
+        "Nature": {
+          "$ref": "#/definitions/EncounterNatureStarforged",
+          "title": "Nature"
+        },
+        "Rank": {
+          "$ref": "#/definitions/ChallengeRank",
+          "title": "Rank"
+        },
+        "Description": {
+          "description": "A user-facing markdown description of the item, consisting of one or more paragraphs.",
+          "type": "string",
+          "title": "Description"
+        }
+      },
+      "defaultProperties": [],
+      "additionalProperties": false,
+      "required": [
+        "$id",
+        "Description",
+        "Display",
+        "Name",
+        "Nature",
+        "Rank",
+        "Source",
+        "Variant of"
+      ]
+    },
+    "ISource": {
+      "description": "Interface representing data on this item's source. For 'canonical' content, this is usually a book with numbered pages, but it might also be a link to a web site.",
+      "title": "ISource",
+      "type": "object",
+      "properties": {
+        "Title": {
+          "description": "The title of the source.\n\nFor 'canonical' content, use one of the enumerated `SourceTitle` strings.\n\nFor 3rd-party content (including homebrew) that's been released as part of a titled document, use the title of that document (e.g. \"Steelforged\", \"Ironsmith\").\n\nIf the source has no particular title (for instance, it's a single custom element in a VTT implementation), use \"Custom\".",
+          "type": "string",
+          "title": "Title"
+        },
+        "Authors": {
+          "description": "The author(s) of this item. For 'canonical' content, this one's usually pretty obvious 😉 However, it's included so that homebrew content can use the same interface/schema.",
+          "default": [
+            "Shawn Tomkin"
+          ],
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "title": "Authors"
+        },
+        "Date": {
+          "description": "The 6-number date string formatted as `MMDDYY`. Relevant only during Starforged development; it will be deprecated once the game is released.",
+          "pattern": "^(0[1-9]|1[0-2])([0-2][1-9]|3[0-1])([0-9][0-9])$",
+          "type": "string",
+          "title": "Date"
+        },
+        "Page": {
+          "description": "The page on which the item appears most prominently in the source material (if it's in a format that uses page numbers).",
+          "type": "integer",
+          "title": "Page"
+        },
+        "Url": {
+          "description": "The URL where the source material is available.",
+          "pattern": "^https?://.*$",
+          "type": "string",
+          "title": "Url"
+        }
+      },
+      "defaultProperties": [],
+      "additionalProperties": false,
+      "required": [
+        "Authors",
+        "Title"
+      ]
+    }
+  }
+}
