@@ -1,6 +1,6 @@
 # alathazal/starforged-data
 
-![Static Badge](https://img.shields.io/badge/version-0.1.0-blue)
+![Static Badge](https://img.shields.io/badge/version-1.0.2-blue)
 
 ## Usage
 
