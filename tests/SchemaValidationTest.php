@@ -3,7 +3,7 @@
 use Opis\JsonSchema\Validator;
 
 describe('Validates data files against their schema', function () {
-    foreach (['asset_types', 'assets', 'encounters', 'moves', 'oracles', 'truths'] as $dataFile) {
+    foreach (['asset_types', 'assets', 'encounters', 'move_categories', 'moves', 'oracles', 'truths'] as $dataFile) {
         it("{$dataFile}.json validates correctly", function () use ($dataFile) {
             $data = json_decode(
                 file_get_contents(__DIR__ . "/../src/data/{$dataFile}.json")

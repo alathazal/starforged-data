@@ -1,28 +1,32 @@
 {
     "json.schemas": [
         {
-            "fileMatch": ["data/asset_types.json"],
-            "url": "./schema/schema.asset_types.json"
+            "fileMatch": ["src/data/asset_types.json"],
+            "url": "./src/schema/schema.asset_types.json"
         },
         {
-            "fileMatch": ["data/assets.json"],
-            "url": "./schema/schema.assets.json"
+            "fileMatch": ["src/data/assets.json"],
+            "url": "./src/schema/schema.assets.json"
         },
         {
-            "fileMatch": ["data/encounters.json"],
-            "url": "./schema/schema.encounters.json"
+            "fileMatch": ["src/data/encounters.json"],
+            "url": "./src/schema/schema.encounters.json"
         },
         {
-            "fileMatch": ["data/moves.json"],
-            "url": "./schema/schema.moves.json"
+            "fileMatch": ["src/data/moves.json"],
+            "url": "./src/schema/schema.moves.json"
         },
         {
-            "fileMatch": ["data/oracles.json"],
-            "url": "./schema/schema.oracles.json"
+            "fileMatch": ["src/data/move_categories.json"],
+            "url": "./src/schema/schema.move_categories.json"
         },
         {
-            "fileMatch": ["data/truths.json"],
-            "url": "./schema/schema.truths.json"
+            "fileMatch": ["src/data/oracles.json"],
+            "url": "./src/schema/schema.oracles.json"
+        },
+        {
+            "fileMatch": ["src/data/truths.json"],
+            "url": "./src/schema/schema.truths.json"
         }
     ]
 }
