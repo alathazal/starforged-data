@@ -37,4 +37,4 @@ This work is based on _Ironsworn: Starforged_, created by Shawn Tomkin, and lice
 
 ## Thanks and Attribution
 
-The **starforged-data** composer package was based off the [rsek/dataforged](https://github.com/rsek/dataforged/) node package, to provide the same game resources for PHP projects. Even though the data files have been rewritten in a differing format, a huge thanks has to be given to **rsek** for all their hard work creating the original repository.
+The **starforged-data** composer package was based off the [rsek/dataforged](https://github.com/rsek/dataforged/) node package, to provide the same game resources for PHP projects. Even though the data files have been reorganised, a huge thanks has to be given to **rsek** for all their hard work creating the original repository.
