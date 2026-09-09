@@ -1,16 +1,19 @@
 # To-Dos
 
 - Schema Files:
-  - [ ] Assets
-  - [ ] Encounters
-  - [ ] Moves
-  - [ ] Oracles
-  - [ ] Shared
+  - [x] Assets
+  - [x] Asset Types
+  - [x] Encounters
+  - [x] Moves
+  - [x] Move Categories
+  - [x] Oracles
   - [x] Truths
 
 - Data Files:
-  - [ ] Assets
-  - [ ] Encounters
-  - [ ] Moves
-  - [ ] Oracles
-  - [ ] Truths
+  - [x] Assets
+  - [x] Asset Types
+  - [x] Encounters
+  - [x] Moves
+  - [x] Move Categories
+  - [x] Oracles
+  - [x] Truths

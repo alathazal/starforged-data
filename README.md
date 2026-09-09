@@ -24,8 +24,10 @@ $data_path = $starforged->getDataPath(DataTypes::TRUTHS);
 The `DataTypes` enumerator supports the following options:
 
 - `DataTypes::ASSETS`
+- `DataTypes::ASSET_TYPES`
 - `DataTypes::ENCOUNTERS`
 - `DataTypes::MOVES`
+- `DataTypes::MOVE_CATEGORIES`
 - `DataTypes::ORACLES`
 - `DataTypes::TRUTHS`
 
